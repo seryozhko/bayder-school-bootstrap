@@ -1,0 +1,26 @@
+@import "custom.scss";
+
+.material-icons.md-21 { font-size: 21px; };
+.material-icons.blue { color: $blue };
+.material-icons.pink { color: $pink };
+
+.navbar-nav {
+  font-weight: 700;
+  font-size: 0.75rem
+};
+.logo {
+  width:40px;
+  height:40px;
+};
+@media (min-width: 576px) {
+  .logo {
+    width:60px;
+    height:60px;
+  }
+};
+@media (min-width: 768px) {
+  .logo {
+    width:80px;
+    height:80px;
+  }
+};
