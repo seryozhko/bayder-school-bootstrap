@@ -1,12 +1,24 @@
 const { src, dest, watch } = require('gulp');
 const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
 
-function scss() {
-  return src('src/scss/*.scss')
-    .pipe(sass())
-    .pipe(dest('src/css'));
-}
+const css = {
+  src: './src/scss/*.scss',
+  watch: './src/scss/**/*',
+  buildMin: '../html/wp-content/themes/bayder-school/',
+  build: './build/',
+  sassOpts: {
+    outputStyle     : 'nested',
+    precision       : 3,
+    errLogToConsole : true
+  },
+  processors: [ require('cssnano') ]
+};
 
-exports.default = function() {
-  watch('src/scss/*.scss', scss);
-}
+const scss = () => src(css.src)
+                    .pipe(sass(css.sassOpts))
+                    .pipe(dest(css.build))
+                    .pipe(postcss(css.processors))
+                    .pipe(dest(css.buildMin));
+
+exports.default = () => watch(css.watch, scss);

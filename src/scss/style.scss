@@ -1,26 +1,55 @@
-@import "custom.scss";
+/*!
+Theme Name: Bayder School
+Author: Seryozhko
+Author URI: https://seryozhko.me/
+Description: Bayder Aikido School Theme
+Requires at least: WordPress 4.9.6
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: bayder-school
+*/
+@import "parts/custom.scss";
 
-.material-icons.md-21 { font-size: 21px; };
-.material-icons.blue { color: $blue };
-.material-icons.pink { color: $pink };
+svg.btn {
+  fill: #fff; 
+  width: 24px;
+  height: 24px;}
 
 .navbar-nav {
   font-weight: 700;
   font-size: 0.75rem
 };
 .logo {
-  width:40px;
-  height:40px;
+  width:31px;
+  height:31px;
 };
-@media (min-width: 576px) {
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    font-size: 0.65rem;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 0;
+  }
+
+  svg.btn {
+    width: 18px;
+    height: 18px;
+  }
+
   .logo {
     width:60px;
     height:60px;
   }
 };
-@media (min-width: 768px) {
-  .logo {
-    width:80px;
-    height:80px;
+@media (min-width: 992px){
+  .navbar-nav {
+    font-size: 0.75rem;
   }
-};
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 0.5rem;
+  }
+
+}
