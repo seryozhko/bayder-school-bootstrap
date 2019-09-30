@@ -53,3 +53,21 @@ svg.btn {
   }
 
 }
+
+.modal-full {
+  width:auto;
+  max-width: 70vw;
+  margin: auto;
+}
+.modal-full .modal-content {
+  width:auto;
+  margin: auto;
+}
+.modal-full .modal-content img{
+  max-height: 90vh;
+  margin: auto;
+}
+.carousel-control-next, .carousel-control-prev{
+  top:40%;
+  bottom: 40%;
+}

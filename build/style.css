@@ -7060,3 +7060,20 @@ svg.btn {
     font-size: 0.75rem; }
   .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 0.5rem; } }
+
+.modal-full {
+  width: auto;
+  max-width: 70vw;
+  margin: auto; }
+
+.modal-full .modal-content {
+  width: auto;
+  margin: auto; }
+
+.modal-full .modal-content img {
+  max-height: 90vh;
+  margin: auto; }
+
+.carousel-control-next, .carousel-control-prev {
+  top: 40%;
+  bottom: 40%; }
