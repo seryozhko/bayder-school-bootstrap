@@ -1,13 +1,13 @@
 {
-  "name": "bootstrap-test",
+  "name": "bayder-school-bootstrap",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "seryozhko.me",
-  "license": "ISC",
-  "description": "",
+  "author": "seryozhko",
+  "license": "MIT",
+  "description": "bootstrap template for bayder-school wordpress theme",
   "dependencies": {
     "bootstrap": "^4.3.1"
   },
